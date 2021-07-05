@@ -8,12 +8,14 @@
 namespace CherryneChou\EasyFeieYun\Order;
 
 use CherryneChou\EasyFeieYun\BaseClient;
+use Pimple\Container;
+use Pimple\ServiceProviderInterface;
 
 /**
  * Class Client
  * @package CherryneChou\EasyYilianYun\Printer
  */
-class Client extends BaseClient
+class ServiceProvider extends ServiceProviderInterface
 {
   /**
    * Registers services on the given container.

@@ -21,6 +21,7 @@ class Application extends Container
     protected $providers = [
         Machine\ServiceProvider::class,     //打印机
         Printer\ServiceProvider::class,     //打印
+        Order\ServiceProvider::class,      //订单
     ];
 
     /**
