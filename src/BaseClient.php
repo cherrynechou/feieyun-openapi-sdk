@@ -51,7 +51,7 @@ class BaseClient extends Client
             'user' => $this->app['config']->get('username'),
             'stime'=> $time,
             'sig' => $this->getSign($time),
-            'apiname'=> $url,,
+            'apiname'=> $url,
         ];
 
         $response = $this->request($url, 'POST', ['form_params' => $data + $params])

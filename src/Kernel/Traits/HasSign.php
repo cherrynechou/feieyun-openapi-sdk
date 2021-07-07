@@ -22,7 +22,7 @@ trait  HasSign
     {
         return sha1(
           $this->app['config']->get('username') .
-          $this->app['config']->get('uKey') .
+          $this->app['config']->get('u_key') .
           $timestamp
         );
     }
